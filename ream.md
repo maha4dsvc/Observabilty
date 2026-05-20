@@ -9,7 +9,7 @@ https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_windows_arm6
 
 ## Or 
 
-# Open Powershell as administrator  and execute command 
+# For install EKSCTL Open Powershell as administrator  and execute command 
 ```bash
 $ErrorActionPreference = "Stop"; `
 $installPath = "C:\Program Files\eksctl"; `
@@ -39,7 +39,7 @@ Write-Host "   eksctl version"
 - Try to login with aws ( aws configure)
 - Then we can execute aws cli commands
 
-##Install Kubectle on your laptop:
+# Install Kubectle on your laptop:
 ```bash
 choco install kubernetes-cli -y
 Kubectl 
@@ -63,7 +63,7 @@ eksctl create nodegroup --cluster=observability1 --region=us-west-2   --name=obs
 aws eks update-kubeconfig --name observability1
 ```
 
-Step 2: Install kube-prometheus-stack
+# Step 2: Install kube-prometheus-stack
 ```bash
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
