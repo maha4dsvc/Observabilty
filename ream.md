@@ -55,7 +55,7 @@ eksctl utils associate-iam-oidc-provider --region us-west-2 --cluster observabil
 ```
 
 ```bash
-eksctl create nodegroup --cluster=observability1 --region=us-west-2   --name=observability1-ng-private                    --node-type=t3.medium --nodes-min=2 --nodes-max=3 --node-volume-size=20 --managed --asg-access --external-dns-access --full-ecr-access --appmesh-access --alb-ingress-access --node-private-networking
+eksctl create nodegroup --cluster=observability1 --region=us-west-2 --name=observability1-ng-private   --node-type=t3.medium --nodes-min=2 --nodes-max=3 --node-volume-size=20 --managed --asg-access --external-dns-access --full-ecr-access --appmesh-access --alb-ingress-access --node-private-networking
 ```
 
 ```bash
