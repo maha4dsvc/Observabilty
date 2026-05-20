@@ -99,7 +99,7 @@ kubectl port-forward service/monitoring-grafana -n monitoring 8080:80
 kubectl port-forward service/alertmanager-operated -n monitoring 9093:9093
 ```
 
-### see Exports:
+### For See Exports:
 
 ```bash
 kubectl get pods -n monitoring
